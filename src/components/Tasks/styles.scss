@@ -1,0 +1,182 @@
+.tasks {
+  width: 380px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__task {
+    width: 380px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px 10px;
+  }
+
+  &__checkbox {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 50%;
+    accent-color: #000000;
+    cursor: pointer;
+  }
+
+  &__name {
+    width: 180px;
+    margin: 0;
+    font-size: 18px;
+    word-break: break-word;
+
+    &_completed {
+      text-decoration: line-through;
+      color: gray;
+    }
+  }
+
+  &__activity {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  &__text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__button-block {
+    display: flex;
+    margin-left: auto;
+  }
+
+  &__edit {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+    background-image: url('../../images/edit-btn.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: .3s ease;
+  }
+
+  &__edit-error {
+    top: 100%;
+    margin-top: 2px;
+    position: absolute;
+    align-self: center;
+    font-size: 14px;
+    color: red;
+  }
+
+  &__button-save {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    background-image: url('../../images/save.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: .3s ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__button-cancel {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    background-image: url('../../images/cancel.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: .3s ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__button-remove {
+    height: 24px;
+    align-self: center;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: normal;
+    border: 1px solid rgba(66, 66, 66, 1);
+    background-color: rgba(32, 32, 32, 1);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__footer {
+    width: 380px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__input-block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__input {
+    width: 250px;
+    height: 30px;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Montserrat', 'Montserrat-Light', sans-serif;
+    background-color: #ffffff;
+  }
+
+  &__error-message {
+    margin-top: 6px;
+    margin-left: 8px;
+    color: red;
+    font-size: 14px;
+  }
+
+  &__button-footer {
+    width: 92px;
+    height: 46px;
+    border-radius: 6px;
+    font-size: 12px;
+    text-transform: uppercase;
+    border: 1px solid rgba(66, 66, 66, 1);
+    background-color: rgba(32, 32, 32, 1);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
